@@ -1,5 +1,7 @@
 package ar.edu.unju.fi.modelo.dominio;
 
+import ar.edu.unju.fi.modelo.util.CalidadPrenda;
+
 /**
  * Representa a una prenda que puede ser cotizada
  */
@@ -8,6 +10,7 @@ public class Prenda {
 	private String nombre;
 	private double precioLista;
 	private int stock;
+	private CalidadPrenda calidad;
 	
 	public Prenda() {
 		// TODO Auto-generated constructor stub
@@ -43,6 +46,14 @@ public class Prenda {
 
 	public void setStock(int stock) {
 		this.stock = stock;
+	}
+
+	public CalidadPrenda getCalidad() {
+		return calidad;
+	}
+
+	public void setCalidad(CalidadPrenda calidad) {
+		this.calidad = calidad;
 	}
 	
 	
