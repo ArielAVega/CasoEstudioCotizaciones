@@ -1,5 +1,7 @@
 package ar.edu.unju.fi.modelo.dominio;
 
+import java.util.List;
+
 /**
  * Es la persona que utiliza la aplicación
  */
@@ -8,6 +10,7 @@ public class Vendedor {
 	private String apellidos;
 	private String nombres;
 	private Usuario usuario; 
+	private List<Cotizacion> historialCotizaciones;
 	
 	public Vendedor() {
 		// TODO Auto-generated constructor stub
@@ -43,6 +46,14 @@ public class Vendedor {
 
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
+	}
+
+	public List<Cotizacion> getHistorialCotizaciones() {
+		return historialCotizaciones;
+	}
+
+	public void setHistorialCotizaciones(List<Cotizacion> historialCotizaciones) {
+		this.historialCotizaciones = historialCotizaciones;
 	}
 	
 	
